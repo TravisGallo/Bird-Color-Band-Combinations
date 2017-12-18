@@ -64,7 +64,7 @@ for (i in 1:length(bands)){
   total_y2[i] <- sum(unused_combos == bands[i])
 }
 
-to_order_y2 <- data.frame(color=bands, total=total2)
+to_order_y2 <- data.frame(color=bands, total=total_y2)
 
 #OPTIONAL - again you can take a random subset
 bands_subset_y2 <- as.data.frame(unused_combos[sample(nrow(unused_combos), 200, replace=FALSE),])
